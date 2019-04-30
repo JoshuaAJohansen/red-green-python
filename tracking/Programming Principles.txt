@@ -1,0 +1,95 @@
+First I wrote my own principles, then when I nearly exhausted that list
+I googled ‘principles of programming’
+Found makeuseof and added their principles.
+then noticed google had a list of principles, after scrolling across I found ‘Zen of Python’
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+Principles:
+
+Learn from the leaders.
+For your language look up that language and conference
+look up the frameworks you use, etc
+Then pick the interesting pieces and dive in
+
+“The most real things are the things that are most permanent across time
+and manifest themselves across  the largest number of situations
+so the question is… one question is… what are the constants of experience.”
+
+Version control
+Dependency management
+environment management(cross platform execution)
+lockfile
+correctness
+	tests
+	mocks for external systems
+autoformatting of code -> for style guide
+Moving code in the editor
+	refactoring(extract method, etc)
+autoimporting
+Monitoring
+	What is happening
+	what happened(logs, stack traces, all the steps that led to the state getting to where it did)
+logging
+debugging
+	Know how to test and debug code before you write it. If you can’t it is probably too complex.
+
+https://www.makeuseof.com/tag/basic-programming-principles/
+KISS(Keep it simple stupid)
+	Do core libraries cover this scenario - ‘, ‘.join(programmingPrinciples)
+DRY( don’t repeat yourself) -> writing functions, annotations
+Open/Closed -> open to extension, closed to modification
+	key to making a good api
+Composition over inheritance -> complex objects made of smaller simpler objects.
+Single responsibility Principle -> “A class should have only one reason to change.” - Robert C. Martin
+Separation of concerns -> example is MVC, different parts of the system shouldn’t know about each other.
+YAGNI -> ‘you aren’t gonna need it’. Don’t add code/ behaviors you aren’t going to need, yet leave yourself open to make them later if they may come up.
+
+Avoid Premature Optimization - Optimize code when you must. Do so after code is functional, has passing tests, and the initial performance baseline has been taken. Only keep optimized code if tradeoff for code complexity/maintainability out ways the actual improvements
+
+Refactor - always. You know more about the puzzle you are solving now, then you did in the past.
+Clean Code > Clever code
+	Python’s pep8 ensures the whitespace is functional and improves the readability for everyone.
+	Python’s ‘Black’ autoformatter is strict subset of pep8 and can do this automatically for you
+https://www.makeuseof.com/tag/basic-programming-principles/
+
+SOLID
+GRASP
+Interface Segregation principle
+Discoverability
+Inversion of Control
+Dependency Inversion Principle
+Law of demeter
+Principle of least astonishment - The principle of least astonishment applies to user interface and software design. A typical formulation of the principle, from 1984, is: "If a necessary feature has a high astonishment factor, it may be necessary to redesign the feature."
+Separation of mechanism and policy
+Description
+The separation of mechanism and policy is a design principle in computer science. It states that mechanisms should not dictate the policies according to which decisions are made about which operations to authorize, and which resources to allocate. 
+
+Ninety-ninety rule
+Description
+In computer programming and software engineering, the ninety-ninety rule is a humorous aphorism that states: The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
+	****Ensure the last 10 percent has high confidence and competence****
+
+Zero one infinity rule
+Description
+The Zero one or infinity rule is a rule of thumb in software design proposed by early computing pioneer Willem van der Poel. It argues that arbitrary limits on the number of instances of a particular entity should not be allowed.

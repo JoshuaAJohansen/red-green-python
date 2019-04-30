@@ -55,3 +55,5 @@ Make git push with commit easier -> https://stackoverflow.com/a/4299159
     Git add and commit with message
         $ git coadd "Added to tracking.txt"
         $ git push
+One liner for git push
+    git coadd "Testing instant push"; git push

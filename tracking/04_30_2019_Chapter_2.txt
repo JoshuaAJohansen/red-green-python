@@ -1,0 +1,7 @@
+Reread Previous days work
+Praiseworthy:
+* Incremental tdd
+* Great book resource to learn from.
+* Other peoples solutions will keep humble learners mind.
+* PyCharm is charming
+
