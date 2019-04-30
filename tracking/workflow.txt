@@ -4,7 +4,7 @@ open file:///Users/josh/Downloads/95836888.pdf
 Start Django server, to spin up localhost:8000
         > python manage.py runserver
 
-
+cmd + shift + 0     Go to file
 fn + option + F12   Open Terminal View
 cmd + 4             Open Run View
 cmd + 6             Open TODO view

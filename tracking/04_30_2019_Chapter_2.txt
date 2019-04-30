@@ -1,7 +1,20 @@
-Reread Previous days work
-Praiseworthy:
+Reread 04_29_2019_Beginning_Tdd
+
+Gratitude/Praise:
 * Incremental tdd
 * Great book resource to learn from.
 * Other peoples solutions will keep humble learners mind.
 * PyCharm is charming
+* The Solvay Congress... "People like us do things like this." Raise your standard, and live in an energized state.
 
+
+Run the Terminal
+Start the videos and start testing onwards! chapter 2!!!!
+
+don't forget... coadd -m "My message"; git push
+
+Added comments for the userstory ' test_can_start_a_list_and_retrieve_it_later'
+Added setup and teardown methods
+0 tests running, with no errors.
+Test methods must be indented correctly in class to be found in main.
+This is easily caught by debugging.
