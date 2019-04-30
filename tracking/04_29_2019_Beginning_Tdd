@@ -53,4 +53,5 @@ Make git push with commit easier -> https://stackoverflow.com/a/4299159
     Added to .bash_profile
         git config --global alias.coadd '!git add -A && git commit -m'
     Git add and commit with message
-        git coadd "Added to tracking.txt"
+        $ git coadd "Added to tracking.txt"
+        $ git push
