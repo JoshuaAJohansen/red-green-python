@@ -1,0 +1,28 @@
+Bought the book, downloaded the pdf.
+Created functional_tests.py
+Added code to launch driver
+Test failed.
+deactivated conda
+Created venv
+    > python3 -m venv venv
+    > source venv/bin/activate
+    > pip install selenium
+    > pip freeze > requirements.txt
+Ran functional_test.py
+Error message, geckodriver not found.
+    Go to https://github.com/mozilla/geckodriver/releases
+    Download geckodriver-v0.24.0-macos.tar.gz
+    Unzip download
+    open terminal
+        >cd Downloads; sudo mv geckodriver /usr/local/bin/geckodriver
+        >geckodriver --version
+        geckodriver 0.24.0 ( 2019-01-28)
+Run functional_tests.py
+    browser.get('http://localhost:8000') fails.
+Need to create django app running on http://localhost:8000
+    In pycharm project create django project to generate 'superlists' folder and manage.py
+        > django-admin.py startproject superlists .
+    Start Django server, to spin up localhost:8000
+        > python manage.py runserver
+    Open new Terminal window, and run tests again
+        > python functional_tests.py
