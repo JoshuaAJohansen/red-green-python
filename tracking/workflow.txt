@@ -1,3 +1,5 @@
 fn + option + F12   Open Terminal View
 cmd + 4             Open Run View
 cmd + 6             Open TODO view
+shift + option up   Move current line up. Down for down
+git config --global alias.coadd '!git add -A && git commit -m'

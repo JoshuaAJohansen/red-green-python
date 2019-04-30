@@ -26,3 +26,31 @@ Need to create django app running on http://localhost:8000
         > python manage.py runserver
     Open new Terminal window, and run tests again
         > python functional_tests.py
+    Tests are passing
+Create .gitignore
+    Copy https://github.com/github/gitignore/blob/master/Python.gitignore
+    > echo "geckodriver.log" >> .gitignore
+    > echo "venv" >> .gitignore
+    > echo "db.sqlite" >> .gitignore
+Track code in version control
+    > git init
+    > git status
+    > git add .
+    > git commit -m "Initial Commit"
+    Create public repo on github.
+    > git remote add origin https://github.com/Senofjohan/red-green-python.git
+    > git remote -v
+    > git push -u origin master
+    Verify code pushed at - https://github.com/Senofjohan/red-green-python
+End Chapter 1 - Well done!
+Remove .idea from git -> https://stackoverflow.com/a/11124105
+    $ echo '.idea' >> .gitignore
+    $ git rm -r --cached .idea
+    $ git add .gitignore
+    $ git commit -m '.idea added to gitignore'
+    $ git push -u origin master
+Make git push with commit easier -> https://stackoverflow.com/a/4299159
+    Added to .bash_profile
+        git config --global alias.coadd '!git add -A && git commit -m'
+    Git add and commit with message
+        git coadd "Added to tracking.txt"
