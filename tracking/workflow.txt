@@ -1,6 +1,10 @@
 conda deactivate; source venv/bin/activate; git status; open https://www.youtube.com/watch?v=IvwS6BYjHG0; open /users/josh/Desktop/UPW\ Saved.mov;
 open file:///Users/josh/Downloads/95836888.pdf
 
+Start Django server, to spin up localhost:8000
+        > python manage.py runserver
+
+
 fn + option + F12   Open Terminal View
 cmd + 4             Open Run View
 cmd + 6             Open TODO view
