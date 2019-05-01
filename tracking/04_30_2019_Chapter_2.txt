@@ -25,3 +25,11 @@ $ python manage.py startapp lists
 Add failing django test to tests.py in lists app using special TestCase
 Run Django Test
     $python manage.py test
+Create new test that returns a home_page view
+Test fails
+add None
+Now Url fails
+Need to add url to superlists/urls.py
+    url(r'^$', views.home_page, name='home'),
+    added 'from lists import views'
+    getting error TypeError: view must be a callable or a list/tuple in the case of include().
