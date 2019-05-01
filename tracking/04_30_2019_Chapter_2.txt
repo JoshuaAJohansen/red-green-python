@@ -18,3 +18,10 @@ Added setup and teardown methods
 0 tests running, with no errors.
 Test methods must be indented correctly in class to be found in main.
 This is easily caught by debugging.
+
+Create an app for our to-do lists
+$ python manage.py startapp lists
+
+Add failing django test to tests.py in lists app using special TestCase
+Run Django Test
+    $python manage.py test
