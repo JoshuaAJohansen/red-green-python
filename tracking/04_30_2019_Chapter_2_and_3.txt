@@ -33,3 +33,18 @@ Need to add url to superlists/urls.py
     url(r'^$', views.home_page, name='home'),
     added 'from lists import views'
     getting error TypeError: view must be a callable or a list/tuple in the case of include().
+Added view and unit test passes
+Create test in HomePageTest to test home_page_returns_correct_html
+Run test
+    View received 0 arguments, but expected one
+    Add request to home_page in lists/views.py, and return HttpResponse
+Run Test, False is not True, for starting with html
+    Add html.
+    Add title.
+    Add closing html tag.
+    Passing test
+Unit test passing, now continue on with integration test.
+    start server with $ python manage.py runserver
+    cmd + shift + o 'func' to search for functional_tests.py
+    Run test and it failed at reminder
+        self.fail('Finish the Test!')
