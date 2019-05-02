@@ -1,0 +1,75 @@
+Daily:
+Open terminal at location of manage.py
+deactivate
+source venv/bin/activate
+pip list
+
+Installing new requirements:
+pip install 'requirement'
+pip freeze > requirements.txt
+
+# To install old requirements.txt into the new project.
+pip install -r requirements.txt
+
+
+#list
+pip3 list
+
+python3 -m venv project_env
+creates project_env in current folder
+source project-env/bin/activate
+#python version used to create the venv will be the same used for the project
+
+'pip list' in environment to show the new dependencies
+pip install request
+pip install pytz
+
+pip list # shows packages and dependencies
+
+#export packages for environment
+#
+pip freeze > requirements.txt
+# show contents
+cat requirements.txt
+
+#deactivate environment
+deactivate
+
+#delete environment
+rm -rf project_env
+
+#create a project
+mkdir my_project
+cd my_project
+python3 -m venv venv
+source venv/bin/activate
+
+# To install old requirements.txt into the new project.
+pip install -r requirements.txt
+
+Don't put project files into the venv in your project
+# script to create python3 venv, activate it, and install the requirements.txt
+
+# .gitignore should allow people to build their own environments
+
+
+rm -rf venv
+# create environment with access to system packages
+python3 -m venv venv --system-site-packages
+source venv/bin/activate
+pip list
+pip install Flask
+# Only the packages installed in this specific environment
+pip list --local
+pip freeze --local 
+
+
+# Activating a Virtual Env in Pycharm
+https://www.youtube.com/watch?v=W8C097f6Hcg
+
+
+# manage dependencies
+https://www.jetbrains.com/help/pycharm/managing-dependencies.html
+
+# Install, uninstall, and upgrade packages
+https://www.jetbrains.com/help/pycharm/installing-uninstalling-and-upgrading-packages.html#Installing_Uninstalling_and_Upgrading_Packages.xml
