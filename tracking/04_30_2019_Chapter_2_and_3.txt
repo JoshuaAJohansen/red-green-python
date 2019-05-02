@@ -48,3 +48,19 @@ Unit test passing, now continue on with integration test.
     cmd + shift + o 'func' to search for functional_tests.py
     Run test and it failed at reminder
         self.fail('Finish the Test!')
+Added more steps to integration test
+Moved html into templates/home.html
+    django will automatically search folders called templates inside any of apps' directories
+Changed view.py to render 'home.html'
+    Run p
+    App needs to be added to settings.py
+        INSTALLED_APPS = [
+            'django.contrib.admin',
+          ...
+            'lists'
+        ]
+    Run tests
+    Template added \n character at end, use strip() to remove the white spacing.
+    Removed <!Doctype and other elements pycharm autocreated on new file for minimal passing test.
+    $ python manage.py test
+    Test passes for rendering the home.html
