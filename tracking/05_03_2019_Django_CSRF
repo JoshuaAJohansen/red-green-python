@@ -1,0 +1,20 @@
+Gratitude
+* Frameworks and programming languages getting safer as time goes on -> DJANGO {% csrf_token %} for forms.
+* San Bruno
+* Well crafted error messages
+* Having wisdom in places where you need to make decisions, inline debugging values.
+* Highlighting in pdfs to review essential information.
+* Kenneth Reitz, his values, contributions to open source, and being an inspiration to how we can work together and improve each other.
+* Opportunity to grow and raise my standards.
+
+Add CSRF token to form in django
+Add unit test for lists/tests.py to process post request on server
+    Post request failing for unit test, need to add new request method in home_page
+        Added - if request.method == 'POST':
+                    return HttpResponse(request.POST['item_text'])
+        Rerun python manage.py test
+Refactor to add posted content to table data.
+    Add to home.html
+        <td>{{ new_item_text }}</td>
+    AssertionError: No templates used to render the response
+        pass post response to the render function
