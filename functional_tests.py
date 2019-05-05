@@ -17,6 +17,7 @@ class NewVisitorTest(unittest.TestCase):
         newBody = body
         element.send_keys(Keys.ENTER)
         while body == newBody:
+            # 50 milliseconds
             time.sleep(0.05)
             newBody = self.browser.find_element_by_tag_name('body')
 
