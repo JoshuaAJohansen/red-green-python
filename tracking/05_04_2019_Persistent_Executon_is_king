@@ -39,3 +39,4 @@ Assertion can be simplified:
     any(row.text == '1: Buy peacock feathers' for row in rows),
     to
     self.assertIn('1: Buy peacock feathers', [row.text for row in rows])
+Create helper method to check for row in list to be used for adding multiple items dynamically.
