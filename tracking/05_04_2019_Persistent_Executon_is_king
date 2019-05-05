@@ -1,0 +1,41 @@
+Gratitude
+* Eric Thomas and his reminder that execution is king. It reminded me of a quote... The smallest deed is better than the greatest intention.
+
+Note:
+* How would our programs differ if we were fully present in our body and mind, similar to that feeling you get after working out with friends, or going through a yoga class.
+I feel there are ways to tap into it without the exercise, but something about the motions help to keep everything here.
+To be able to do this would be important because these deeply present states of flow allow us to perform at 500% of our capacity.
+Persistent action takes over, the body flows.
+
+Applying this to TDD with python:
+Clear requirements allow flow the take place.
+1. Understand requirements, and draw up workflow if necessary.
+    * this is beneficial for sharing the program with others and can be stored on confluence pages.
+    * Microsoft Visio works well for digital copies. Paper, pencil and taking a photo is quicker.
+    * Haven't tried lucidchart, but I need to find a good alternative for macs...
+2. Create files with inline comments to guide our tdd.
+3. Add failure message to end of the test. This will be removed after implementing the feature.
+4. Jump up and down and sit down in your seat strong.
+5. Organize the files to easy context switch between files.
+6. A well structured screen will increase your ability to understand which increases coding confidence, which increases competence and willingness to take risks. This begins an infinite cycle of growth.
+7. Create useful usable and used software.
+
+Begin coding:
+Run python manage.py test
+    AssertionError: No templates used to render the response
+Fix failing test
+    Fixed failing test by adding:
+        request.POST.get('item_text', '') with a default value ''.
+Startup django server
+python manage.py runserver
+Run Functional Test
+     AssertionError: False is not true : New to-do item did not appear in table
+Improve message to increase ability to act on failure.
+    f"New to-do item did not appear in table. Contents were:\n{table.text}"
+    Contents of table was showing up empty.
+    Needed to add name="item_text" to input field. That sets value of 'new_item_text' which is rendered in the table.
+        {'new_item_text': request.POST.get('item_text', '')})
+Assertion can be simplified:
+    any(row.text == '1: Buy peacock feathers' for row in rows),
+    to
+    self.assertIn('1: Buy peacock feathers', [row.text for row in rows])
