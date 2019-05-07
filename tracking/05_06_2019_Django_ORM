@@ -1,0 +1,45 @@
+Gratitude
+* Steve Jobs and his relentless curiosity.
+* I saw a man at an art festival in San Francisco that had an ipad and was using it to walk in front of the stage to adjust the audio, since there was no sound booth.
+What an ingenious use for technology. When we understand problems in an abstract level we can begin to map existing solution sets on them.
+
+Django ORM
+Create test to save list item to our model.
+    Add Model to our test to store list items.
+    Unable to import Item from 'lists.models'
+    In lists/models.py add:
+        class Item(object):
+            pass
+    Rerun test
+        AttributeError: 'Item' object has no attribute 'save'
+    Rerun test
+        django.db.utils.OperationalError: no such table: lists_item
+    Change to:
+        class Item(models.Model):
+    Rerun test
+        django.db.utils.OperationalError: no such table: lists_item
+    Need to run migrations
+        $ python manage.py makemigrations
+    View migrations
+        $ ls lists/migrations
+    Run test
+        AttributeError: 'Item' object has no attribute 'text'
+        Add text field to Item
+            text = models.TextField()
+        Rerun test
+            django.db.utils.OperationalError: no such column: lists_item.text
+                Run migrations
+                    require default value, or one off default value
+                    Selection option 2, for explicit value.
+                    Update model to have default value
+                        ...
+                        class Item(models.Model):
+                            text = models.TextField(default='')
+                    Run migration
+                        python manage.py makemigrations
+                            Migrations for 'lists':
+                              lists/migrations/0002_item_text.py
+                                - Add field text to item
+                    Rerun test
+                    All tests pass!
+Push changes.
