@@ -42,4 +42,6 @@ Create test to save list item to our model.
                                 - Add field text to item
                     Rerun test
                     All tests pass!
-Push changes.
+Commit changes.
+
+Save new posts for new items to the database

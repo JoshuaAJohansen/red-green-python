@@ -1,0 +1,24 @@
+Gratitude
+* Enlightenment of any one individual is of supreme importance.
+The best thing the King can do for his nation is, finally, to perfect himself.
+* Irene by Beach House.... 'It's a strange paradise'.
+
+Django ORM Continued:
+on page 70:
+Before adding to test ensure all are passing
+    $ python manage.py test lists
+    4 tests pass.
+cmd + shift + o - 'tests' to open lists/tests.py
+
+Moved from venv to Installed pipenv for dependency management!
+    Knocked that off of my Important/none urgent tasks.
+    Features - https://github.com/pypa/pipenv#-features
+    *** Lockfile ensures truly deterministic builds
+        No more dependency updates breaking servers due to changes between local environment and latest deploy.
+
+Shifting back to the ORM
+python manage.py test
+    line 23, in test_can_save_a_POST_request self.assertEqual(Item.objects.count(), 1)
+        AssertionError: 0 != 1
+    Need to save the post to the Item
+    Open views.py
