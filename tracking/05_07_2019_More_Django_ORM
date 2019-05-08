@@ -22,3 +22,59 @@ python manage.py test
         AssertionError: 0 != 1
     Need to save the post to the Item
     Open views.py
+Add code to call Item.objects.create(text=request.POST['item_text']) and redirect to home page.
+Assert 302 in response in new test.
+Tests should only do one thing.
+    test_can_save_a_POST_request also verifies redirect, split into two tests
+    def test_redirects_after_POST(self):
+        response = self.client.post('/', data={'item_text': 'A new list item'})
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response['location'], '/')
+Test multiple items can be displayed.
+    Create two items, send get quest
+    assert item text is in response.content.decode()
+    In view added template
+        {% for item in items %}
+            <tr><td>1: {{ item.text }}</td></tr>
+        {% endfor %}
+    Need to pass items into view
+        Query items, then pass into render function
+            items = Item.objects.all()
+            return render(request, 'home.html', {'items': items})
+        Unit test passes
+    Run functional test
+        Test fails with AssertionError: 'To-Do' not found in 'OperationalError at /'
+        Open browser
+            no such table: lists_item
+
+    In order to run test accessing Items need to set up database.
+    Migrate the database
+        (python-tdd-goat) (base) Now:python-tdd-goat josh$ python manage.py migrate
+        Operations to perform:
+          Apply all migrations: admin, auth, contenttypes, lists, sessions
+        Running migrations:
+          Applying contenttypes.0001_initial... OK
+          Applying auth.0001_initial... OK
+          Applying admin.0001_initial... OK
+          Applying admin.0002_logentry_remove_auto_add... OK
+          Applying contenttypes.0002_remove_content_type_name... OK
+          Applying auth.0002_alter_permission_name_max_length... OK
+          Applying auth.0003_alter_user_email_max_length... OK
+          Applying auth.0004_alter_user_username_opts... OK
+          Applying auth.0005_alter_user_last_login_null... OK
+          Applying auth.0006_require_contenttypes_0002... OK
+          Applying auth.0007_alter_validators_add_error_messages... OK
+          Applying auth.0008_alter_user_username_max_length... OK
+          Applying lists.0001_initial... OK
+          Applying lists.0002_item_text... OK
+          Applying sessions.0001_initial... OK
+    Run functional test
+        test is adding two items each time it runs
+        Not incrementing
+        To increment, get the for loop counter from forin
+            <tr><td>{{ forloop.counter }}: {{ item.text }}</td></tr>
+        test running until the end
+Clear the database
+    $ rm db.sqlite3
+    Rerun migration without adding values
+    $ python manage.py migrate --noinput
