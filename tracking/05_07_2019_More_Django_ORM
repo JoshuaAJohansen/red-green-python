@@ -94,3 +94,8 @@ Validate tag is functional
     Run functional_tests.py
     Tests pass.
 Tag works successfully.
+
+Delete remote branch
+    git push origin --delete chapter-5-saving-user-input
+Delete local branch
+    git branch -d chapter-5-saving-user-input
