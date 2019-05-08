@@ -78,3 +78,19 @@ Clear the database
     $ rm db.sqlite3
     Rerun migration without adding values
     $ python manage.py migrate --noinput
+
+Merge branch into master
+Push to github
+create git tag
+    git tag end-of-chapter-05
+Validate tag is functional
+    https://github.com/Senofjohan/red-green-python/releases/tag/v0.2-alpha-end-of-chapter-05
+    download Source code zip
+    Open in Pycharm
+    Set interpreter
+    pipenv install -r requirements.txt
+    python manage.py migrate --noinput
+    python manage.py runserver
+    Run functional_tests.py
+    Tests pass.
+Tag works successfully.
