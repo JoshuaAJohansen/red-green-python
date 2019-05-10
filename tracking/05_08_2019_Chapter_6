@@ -21,3 +21,9 @@ Add LiveServerTestCase so that the functional tests will use a clean database ev
             from django.test import LiveServerTestCase
         remove local host port and replace it with self.live_server_url
         Remove if __name__ == '__main__' since DJango test runner will launch the FT.
+Run all tests
+    python manage.py test
+Run functional tests
+    python manage.py test functional_tests
+Run unit tests
+    python manage.py test lists
