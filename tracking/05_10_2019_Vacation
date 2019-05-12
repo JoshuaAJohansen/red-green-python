@@ -1,11 +1,11 @@
 Gratitude
-* The Write Brothers
+* The Wright Brothers
 * Leonardo Da Vinci, and those that came before him which helped evolve the drawing of the Vitruvian Man.
 * Air Planes
 * TLA+ - programming language that is provable to be correct.
 
 Heading down to Los Angeles
-Pondering the crashes that happened on the Boeing aircrafts.
+Pondering the crashes that happened on the Boeing aircraft.
 
 The software engineers deployed the code without telling the pilots that they were going to be managing
 the nose of the planes to prevent the planes from crashing... It is essential that any physical interaction and overpowering
@@ -18,7 +18,7 @@ No code for today, just a check in.
 
 Also spoke with a great friend, about the benefits of clean and concise coding. They were working on some R scripts for data analysis.
 
-I explained that in Agile - out team does one week sprints - we lay out the requirements of what we want to get done, and what value we want to provide as a result of completing the code.
+I explained that in Agile - our team does one week sprints - we lay out the requirements of what we want to get done, and what value we want to provide as a result of completing the code.
 At the initial stages we may not fully understand the programs or what data is available to us, and so we begin writing up the code and drawing diagrams to ensure we have everything we need.
 If at some point in the middle of the week we don't have all of the information we need to complete the requirement, or if we come up with a better solution we meet and discuss with the
 necessary team members/share holders and continue on with development.
@@ -33,4 +33,3 @@ There are a few useful tools in this realm, in the world of java, ECLEMMA for en
 It doesn't ensure that the tests are correct. To write better tests you should do code reviews or use pittest for mutation testing...
 
 We'll cover more on this later.
-
