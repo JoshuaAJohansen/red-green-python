@@ -1,3 +1,29 @@
 Gratitude
-*
+* podcasts allowing for no 'wasted' time.
+They also give you the ability to 'participate' in long form conversations that wasn't possible in the past. You can learn from the leading leaders in two separate fields in two countries to synthesize those perspectives and apply them in your own context and setting.
 
+Chapter 6
+Add LiveServerTestCase so that the functional tests will use a clean database every time.
+    It requires being run by manage.py test and will find any files that start with 'test'
+    Create folder for tests
+        $ mkdir functional_tests
+    Django needs a folder to be a python package directory(i.e. one with a __init__.py)
+        $ touch functional_tests/__init__.py
+    Move test into new folder and let git know the file has been moved.
+        $ git mv functional_tests.py functional_tests/tests.py
+        This shows up in '$ git status' as:
+            renamed:    functional_tests.py -> functional_tests/tests.py
+    Run test using new command:
+        python manage.py test functional_tests
+        Test reaches expected point.
+    Add LiveServerTestCase to test
+        remove unittest and add new dependency
+            from django.test import LiveServerTestCase
+        remove local host port and replace it with self.live_server_url
+        Remove if __name__ == '__main__' since DJango test runner will launch the FT.
+Run all tests
+    python manage.py test
+Run functional tests
+    python manage.py test functional_tests
+Run unit tests
+    python manage.py test lists

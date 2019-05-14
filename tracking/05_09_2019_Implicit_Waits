@@ -1,0 +1,5 @@
+Gratitude
+* Mac Preview has ability to highlight pdfs to make review easier. See something 4 days in a row and you have 99% memory retention... Try it out!
+
+Replaced method that would check for 'body' element reloading with the max timeout and exception suggestion in the book.
+Will find ways to improve this in the future.
