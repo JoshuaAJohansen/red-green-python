@@ -1,8 +1,4 @@
-from django.urls import resolve
 from django.test import TestCase
-from django.http import HttpResponse
-from django.shortcuts import  render
-from lists.views import home_page
 from lists.models import Item
 
 
